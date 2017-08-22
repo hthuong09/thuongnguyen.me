@@ -1,0 +1,50 @@
+.posts {
+
+  .post {
+    display: block;
+    padding: $post-item-padding 0;
+    box-shadow: 0 2px 2px -2px $darker-shadow;
+
+    &:hover {
+
+      .post-title {
+        color: $blueviolet;
+      }
+
+      .post-line {
+        width: 8rem;
+        background-color: $blueviolet;
+      }
+    }
+
+    time {
+      display: block;
+      color: $post-item-color;
+      margin-bottom: 1.4rem;
+    }
+
+    .post-title {
+      font-size: $post-item-title;
+      font-weight: bold;
+      color: $base-color;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+
+    .post-line {
+      display: block;
+      width: 4rem;
+      height: .2rem;
+      background-color: $base-color;
+      margin: 1rem 0;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+
+    .post-preview {
+      color: $post-item-preview-color;
+    }
+  }
+}

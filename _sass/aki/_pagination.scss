@@ -1,0 +1,28 @@
+.pagination {
+    text-align: center;
+    margin: 1rem;
+
+    .arrow {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        border-bottom: .125rem solid $base-color;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+          border-bottom-color: $blueviolet;
+        }
+
+        &.left {
+            float: left;
+        }
+
+        &.right {
+            float: right;
+        }
+
+    }
+
+}

@@ -1,0 +1,47 @@
+.post-content {
+  padding: 3rem 0;
+
+  .post-title {
+    font-size: 4rem;
+    text-align: center;
+
+    @include media-query(600px) {
+      font-size: 3rem;
+    }
+
+    @include media-query(400px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .post-line {
+    width: 8rem;
+    height: .4rem;
+    background-color: $blueviolet;
+    margin: 1rem auto;
+  }
+
+  .post-info {
+    color: #555;
+    letter-spacing: .5px;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  p {
+    margin: 0 0 1rem;
+    text-align: justify;
+  }
+
+  a {
+    color: #4a9ae1;
+
+    &:hover {
+      color: $blueviolet;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+ @charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   1rem !default; // 16px for most browsers
+$base-line-height: 1.5rem;
+
+
+$post-list-title-size: 2rem;
+$post-title: 3rem;
+$header-padding: 1.4rem;
+$header-margin-bottom: $header-padding;
+$nav-item-size: 1.1rem;
+$nav-item-padding: 0.6rem;
+$site-title-size: 1.5rem;
+
+$post-item-padding: 3rem;
+$post-item-color: #aaa;
+$post-item-title: 2rem;
+$post-item-preview-color: #555;
+
+$shadow: #efefef;
+$darker-shadow: rgba(0, 0, 0, .2);
+
+$body-background-color: #f9fafb;
+$page-background-color: #fff;
+$base-color: #555;
+$title-color: #000;
+$blueviolet: #8A2BE2;
+
+$h1-font-size: 2.0rem !default;
+$h2-font-size: 1.8rem !default;
+$h3-font-size: 1.6rem !default;
+$h4-font-size: 1.4rem !default;
+$h5-font-size: 1.2rem !default;
+$h6-font-size: 1rem !default;
+
+$headings-margin-bottom: $base-font-size * 1.5 !default;
+$headings-font-family:   inherit !default;
+$headings-font-weight:   bold !default;
+$headings-line-height:   1.1 !default;
+$headings-color:         inherit !default;
+
+
+$content-max-width: 800px;
+$content-spacing: 30px;

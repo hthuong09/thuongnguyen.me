@@ -1,0 +1,35 @@
+header {
+  box-shadow: 0 2px 2px -2px $shadow;
+  padding: $header-padding 0;
+
+  .site-title {
+    font-size: $site-title-size;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  nav {
+    float: right;
+
+    li {
+      display: inline-block;
+      font-size: $nav-item-size;
+      padding: 0 $nav-item-padding;
+    }
+  }
+
+  @include media-query(500px) {
+    .site-title {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+  }
+
+}
