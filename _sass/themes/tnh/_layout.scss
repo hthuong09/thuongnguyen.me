@@ -68,7 +68,7 @@ header {
       padding: 0 .25rem;
     }
 
-    @include media-query(500px) {
+    @include media-query($on-palm) {
 
       .menu-icon {
         display: block;
@@ -86,7 +86,7 @@ header {
         right: 0;
         width: 100%;
         padding-right: 1.5rem;
-        background: #fdf6e3;
+        background: $header-background-color;
 
         li {
           display: block;
