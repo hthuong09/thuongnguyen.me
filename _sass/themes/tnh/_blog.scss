@@ -1,0 +1,32 @@
+.post-list {
+  margin-top: 2rem;
+
+  .post-list__post {
+    margin: 2rem 0;
+
+    .post-title {
+      margin: .25rem 0;
+
+      a {
+        color: $post-title-color;
+      }
+    }
+
+    time {
+      font-size: .8125rem;
+    }
+
+    .tags {
+      margin-left: 1rem;
+      font-size: .8125rem;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      a {
+        color: $post-tag-color;
+        padding: 0 0.125rem;
+      }
+    }
+  }
+}

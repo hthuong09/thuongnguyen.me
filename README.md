@@ -1,6 +1,7 @@
-TODO
+## TODO
 
-[ ] Cleanup code
-[ ] Table css
-[ ] CV
-[ ] Projects
+- [ ] CV Page
+- [ ] Tag Page
+- [ ] Seperate home page
+- [ ] Search page
+- [ ] SEO tags

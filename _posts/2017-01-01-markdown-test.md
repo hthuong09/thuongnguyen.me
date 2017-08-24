@@ -2,6 +2,7 @@
 layout: post
 title: Markdown Test Post
 author: Thuong Nguyen
+tags: ['testing', 'blog']
 ---
 
 > This page was taken from [Adam Pritchard's markdown it wiki](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for testing purpose.
