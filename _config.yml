@@ -4,8 +4,14 @@ description: >
   ...
 baseurl: ""
 url: "https://thuongnguyen.me"
-twitter_username: hthuong09
+
+# Social links
 github_username:  hthuong09
+linkedin_username: hthuong09
+stackoverflow_userid: 1414360
+facebook_username: hthuong09
+twitter_username: hthuong09
+
 
 
 permalink: /blog/:categories/:title/

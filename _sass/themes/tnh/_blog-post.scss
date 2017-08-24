@@ -1,115 +1,159 @@
-.post-content {
-    line-height: 1.5;
+.post {
+  .post-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: $post-title-color;
+    margin: 0;
+  }
+
+  .post-line {
+    margin: .25rem;
+  }
+
+  .post-info {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: .875rem;
+
+    span {
+      font-style: italic;
+    }
+
+    .tags {
+      margin-top: 0.25rem;
+
+      a {
+        color: $post-tag-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0.25rem;
+      }
+    }
+  }
+
+  .post-content {
+    line-height: 1.8;
 
     h1, h2, h3, h4, h5, h6 {
-        margin-top: 1.5rem;
-        margin-bottom: 1.0rem;
-        font-weight: 600;
-        line-height: 1.25;
+      margin-top: 1.5rem;
+      margin-bottom: 1.0rem;
+      font-weight: 600;
+      line-height: 1.25;
     }
 
     h1 {
-        font-size: 2em;
-        padding-bottom: .3em;
-        border-bottom: 1px solid #dcd2b6;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-        padding-bottom: .3em;
-        border-bottom: 1px solid #dcd2b6;
-    }
-    
-    h3 {
-        font-size: 1.25em
-    }
-    
-    h4 {
-        font-size: 1em
-    }
-    
-    h5 {
-        font-size: 0.875em
-    }
-    
-    h6 {
-        font-size: 0.85em;
+      font-size: 2em;
+      padding-bottom: .3em;
+      border-bottom: 1px solid $post-header-border-color;
     }
 
-    p {
-        text-align: justify;
+    h2 {
+      font-size: 1.5em;
+      padding-bottom: .3em;
+      border-bottom: 1px solid $post-header-border-color;
+    }
+
+    h3 {
+      font-size: 1.25em;
+    }
+
+    h4 {
+      font-size: 1em;
+    }
+
+    h5 {
+      font-size: 0.875em;
+    }
+
+    h6 {
+      font-size: 0.85em;
     }
 
     strong {
-        color: #3D3D3D;
+      color: $post-strong-color;
     }
 
     hr {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: 0;
-        border-top: 1px solid #dcd2b6;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid $post-hr-line-color;
     }
 
     pre {
-        padding: 1rem;
-        font-family: $monospace-font;
-        overflow-x: auto;
-        background: #e6e0cf;
+      padding: 1rem;
+      overflow-x: auto;
+      background: $post-block-background;
+    }
+
+    code {
+      font-family: $monospace-font;
     }
 
     blockquote {
-        background: #e6e0cf;
+      background: $post-block-background;
+      margin: 0;
+      padding: 1rem;
+      border-left: .25rem solid $post-quote-border-color;
+
+      p {
         margin: 0;
-        padding: 1rem;
-        border-left: .25rem solid #ada48c;
-        
-        p {
-            margin: 0;
-            color: #6f6f6f;
-        }
+        color: $post-quote-color;
+      }
+
+      a {
+        color: $post-quote-link-color;
+      }
     }
 
     code.highlighter-rouge {
-        background: #e6e0cf;
-        border-radius: 3px;
-        padding: .3rem .5rem;
-        font-weight: normal;
-        color: #657b83;
+      background: $post-block-background;
+      border-radius: 3px;
+      padding: .3rem .5rem;
+      font-weight: normal;
+      color: $post-inline-code-color;
     }
 
     table {
-        display: block;
-        width: 100%;
-        overflow: auto;
-        border-collapse: collapse;
+      display: block;
+      width: 100%;
+      overflow: auto;
+      border-collapse: collapse;
 
-        &+table {
-            margin-top: 1rem;
+      & + table {
+        margin-top: 1rem;
+      }
+
+      th {
+        font-weight: 600;
+      }
+
+      th, td {
+        padding: .375rem .8125rem;
+        border: 1px solid $post-table-border-color;
+      }
+
+      thead tr {
+        background-color: $post-table-header-background;
+        color: $post-table-header-color;
+      }
+
+      tr {
+        background-color: $post-table-background1;
+
+        &:nth-child(2n) {
+          background-color: $post-table-background2;
         }
-
-        th {
-            font-weight: 600;
-        }
-
-        th, td {
-            padding: .375rem .8125rem;
-            border: 1px solid #fdf6e3;
-        }
-
-        thead tr {
-            background-color: #cac1a8;
-            color: #f3ead1;
-        }
-
-        tr {
-            background-color: #f3ebd6;
-
-            &:nth-child(2n) {
-                background-color: #ece3cc;
-            }
-        }
-        
+      }
     }
-    
+
+    a {
+      color: $post-link-color;
+      border-bottom: 1px dashed transparent;
+
+      &:hover {
+        border-bottom-color: $post-link-border-color;
+      }
+    }
+  }
 }
