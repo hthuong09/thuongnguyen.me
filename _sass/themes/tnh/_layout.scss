@@ -1,5 +1,5 @@
 html {
-  @include media-query(600px) {
+  @include media-query($on-palm) {
     font-size: 14px;
   }
 }
