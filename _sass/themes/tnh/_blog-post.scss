@@ -75,6 +75,10 @@
       cursor: pointer;
     }
 
+    img {
+      max-width: 100%;
+    }
+
     strong {
       color: $post-strong-color;
     }
