@@ -11,19 +11,35 @@
   </title>
 
   <!-- Search Engine -->
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% else %}
   <meta name="description" content="Just another software developer's blog">
+  {% endif %}
   <!-- Schema.org for Google -->
   <meta itemprop="name" content="Thuong Nguyen">
+  {% if page.description %}
+  <meta itemprop="description" content="{{ page.description }}">
+  {% else %}
   <meta itemprop="description" content="Just another software developer's blog">
+  {% endif %}
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Thuong Nguyen">
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
   <meta name="twitter:description" content="Just another software developer's blog">
+  {% endif %}
   <meta name="twitter:site" content="@hthuong09">
   <meta name="twitter:creator" content="@hthuong09">
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-  <meta property="og:title" content="Thuong Nguyen">
+  <meta property="og:title" content="{{ page.title }}">
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}">
+  {% else %}
   <meta property="og:description" content="Just another software developer's blog">
+  {% endif %}
   <meta property="fb:admins" content="100005629950531">
   <meta property="og:type" content="article">
   <meta property="article:publisher" content="https://www.facebook.com/hthuong09" />

@@ -2,6 +2,7 @@
 layout: post
 author: Thuong Nguyen
 title: Sử dụng Sentry để theo dõi lỗi và sự kiện trong Javascript
+description: Sử dụng Sentry để theo dõi sự lỗi và sự kiện trong Javascript
 tags: ['tutorial', 'javascript', 'sip.js']
 ---
 
