@@ -1,0 +1,13 @@
+<!-- https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<div class="reading-time">
+  About
+  <i>
+  {% assign words = content | number_of_words %}
+  {% if words < 360 %}
+    1 minute
+  {% else %}
+    {{ words | divided_by:180 }} minutes
+  {% endif %}
+  </i>
+  reading time
+</div>
