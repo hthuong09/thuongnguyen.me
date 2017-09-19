@@ -28,11 +28,11 @@ Do đó mình quyết định tìm kiếm một giải pháp online và (tạm t
 Sao một hồi tìm kiếm thì mình tìm được một giải pháp đó là [Sentry](https://sentry.io/)
 
 
-## Thế Sentry là cái gì? Nó có cái gì hay hơn là tự tạo back-end để lưu thông tin?
+## Thế Sentry là cái gì? Nó có cái gì hay hơn là tự tạo backend để lưu thông tin?
 
 ### Giới thiệu về Sentry
 
-Sentry là một Error Tracking & Crash Reporting software (tạm hiểu là phần mềm theo dõi và tự động báo lỗi cho developer) cho rất nhiều ứng dụng trên những tên tảng khác nhau, từ frontend cho tới backend website, từ desktop cho tới mobile, cho tới system log. Hỗ trợ tracking realtime và thông báo thông qua email
+Sentry là một Error Tracking & Crash Reporting software (tạm hiểu là phần mềm theo dõi và tự động báo lỗi cho developer) cho rất nhiều ứng dụng trên những nền tảng khác nhau, từ frontend cho tới backend website, từ desktop cho tới mobile, cho tới system log. Hỗ trợ tracking realtime và thông báo thông qua email
 
 Đặt biệt, Sentry cho sử dụng free account. Free account có thể gửi được max 10.000 events/errors một tháng
 
