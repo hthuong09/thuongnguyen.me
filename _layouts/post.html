@@ -7,6 +7,7 @@ layout: master
   <div class="post-info">
     <span>Written on&nbsp;</span> <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     <span>by&nbsp;</span>{{ page.author }}
+    {% include readtime.html %}
     {% if page.tags %}
     <div class="tags">
       {% for tag in page.tags %}
