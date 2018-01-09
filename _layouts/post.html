@@ -16,6 +16,9 @@ layout: master
     </div>
     {% endif %}
   </div>
+  {% if page.series %}
+    {% include series.html %}
+  {% endif %}
   <div class="post-content">
     {{ content }}
   </div>

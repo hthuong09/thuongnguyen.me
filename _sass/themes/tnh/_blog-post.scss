@@ -35,6 +35,62 @@
     }
   }
 
+  .post-series {
+    background: $post-block-background;
+    border: 1px solid $post-series-block-border;
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    &.collapse {
+      height: 80px;
+      p {
+        margin-bottom: 2rem;
+      }
+      .toggle-series:after {
+        content: "\2795";
+      }
+    }
+
+    .toggle-series {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+      color: $link-color;
+
+      &:hover {
+        color: $link-color-hover;
+      }
+
+      &:after {
+        content: "\2796";
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    ol {
+      li {
+        margin: .5rem;
+        padding-left: .5rem;
+      }
+    }
+
+    a {
+      color: $post-link-color;
+      border-bottom: 1px dashed transparent;
+
+      &:hover {
+        border-bottom-color: $post-link-border-color;
+      }
+    }
+  }
+
   .post-content {
     line-height: 1.8;
 

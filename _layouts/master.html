@@ -24,6 +24,16 @@
         link.setAttribute('target', '_blank');
       }
     }
+
+    document.querySelector('.toggle-series').addEventListener('click', function () {
+      var _ = document.querySelector('.post-series');
+      var hasClass = _.getAttribute('class').indexOf('collapse') !== -1;
+      if (hasClass) {
+        _.setAttribute('class', 'post-series');
+      } else {
+        _.setAttribute('class', 'post-series collapse');
+      }
+    });
   </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
