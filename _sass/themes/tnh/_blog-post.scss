@@ -39,42 +39,17 @@
     background: $post-block-background;
     border: 1px solid $post-series-block-border;
     padding: 1rem;
-    overflow: hidden;
     position: relative;
 
-    &.collapse {
-      height: 80px;
-      p {
-        margin-bottom: 2rem;
-      }
-      .toggle-series:after {
-        content: "\2795";
-      }
-    }
-
-    .toggle-series {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      cursor: pointer;
-      color: $link-color;
-
-      &:hover {
-        color: $link-color-hover;
-      }
-
-      &:after {
-        content: "\2796";
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-        display: block;
-        width: 30px;
-        height: 30px;
-      }
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
     }
 
     ol {
+      padding-left: 1.5rem;
+      margin: 0;
+
       li {
         margin: .5rem;
         padding-left: .5rem;

@@ -5,6 +5,8 @@
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}
+    {% elsif page.series %}
+      {{ page.title }} - {{ page.series }} - {{ site.title }}
     {% else %}
       {{ page.title }} - {{ site.title }}
     {% endif %}
