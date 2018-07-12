@@ -14,14 +14,14 @@
 
   <!-- Search Engine -->
   {% if page.description %}
-  <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ page.description | escape }}">
   {% else %}
   <meta name="description" content="{{ site.description }}">
   {% endif %}
   <!-- Schema.org for Google -->
   <meta itemprop="name" content="Thuong Nguyen">
   {% if page.description %}
-  <meta itemprop="description" content="{{ page.description }}">
+  <meta itemprop="description" content="{{ page.description | escape }}">
   {% else %}
   <meta itemprop="description" content="{{ site.description }}">
   {% endif %}
@@ -29,7 +29,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ page.title }}">
   {% if page.description %}
-  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:description" content="{{ page.description | escape }}">
   {% else %}
   <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
@@ -38,7 +38,7 @@
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta property="og:title" content="{{ page.title }}">
   {% if page.description %}
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
   {% else %}
   <meta property="og:description" content="Just another software developer's blog">
   {% endif %}
@@ -50,6 +50,5 @@
   <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans:400,600&amp;subset=vietnamese" rel="stylesheet">
 </head>

@@ -1,7 +1,8 @@
 ---
 layout: post
 author: Thuong Nguyen
-title: 'My Home Server - Part 1: Introduction'
+title: 'Giới thiệu Home Lab'
 tags: ['en', 'tech', 'tutorial', 'linux', 'server']
+categories: ['SysAdmin Adventure']
 series: My Home Server
 ---
